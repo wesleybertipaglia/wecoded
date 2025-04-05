@@ -7,7 +7,7 @@ interface Props {
 const HtmlRenderer: React.FC<Props> = ({ htmlContent }) => {
   return (
     <div
-      className="flex flex-col gap-4 prose max-w-none"
+      className="html prose max-w-none"
       dangerouslySetInnerHTML={{ __html: htmlContent }}
     />
   );

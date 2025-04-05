@@ -16,15 +16,17 @@ const DetailsView = ({ post }: DetailsViewProps) => {
   return (
     <Container classList="py-5 max-w-3xl mx-auto">
       <div>
-        <figure className="mb-6">
-          <img
-            src={cover_image || "/placeholder.jpg"}
-            alt={title}
-            className="w-full h-[400px] object-cover bg-light rounded-2xl shadow"
-          />
-        </figure>
+        {cover_image && (
+          <figure className="mb-6">
+            <img
+              src={cover_image || "/placeholder.jpg"}
+              alt={title}
+              className="w-full h-[400px] object-cover bg-light rounded-2xl shadow"
+            />
+          </figure>
+        )}
 
-        <h1 className="text-3xl font-bold mb-4">{title}</h1>
+        <h1 className="text-3xl font-bold my-6">{title}</h1>
 
         <div className="flex items-center mb-6">
           <img
@@ -35,7 +37,7 @@ const DetailsView = ({ post }: DetailsViewProps) => {
           <p className="text-gray-700 text-sm">
             By{" "}
             <a
-              href={`https://example.com/${username}`}
+              href={`https://dev.to/${username}`}
               className="text-blue-500 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -50,7 +52,7 @@ const DetailsView = ({ post }: DetailsViewProps) => {
 
       <div>
         <h2 className="text-2xl font-bold mt-8 mb-4">Content</h2>
-        <HtmlRenderer htmlContent={post.body_html} />;
+        <HtmlRenderer htmlContent={post.body_html} />
       </div>
     </Container>
   );

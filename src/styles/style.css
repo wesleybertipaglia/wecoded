@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+.html a {
+    @apply text-blue-600 underline hover:text-blue-800;
+}
+
+.html h1 {
+    @apply text-4xl font-bold mt-6 mb-4;
+}
+
+.html h2 {
+    @apply text-3xl font-semibold mt-5 mb-3;
+}
+
+.html h3 {
+    @apply text-2xl font-medium mt-4 mb-2;
+}
+
+.html p {
+    @apply my-2 leading-relaxed;
+}
+
+.html ul {
+    @apply list-disc pl-6 my-2;
+}
+
+.html ol {
+    @apply list-decimal pl-6 my-2;
+}
+
+.html blockquote {
+    @apply border-l-4 border-gray-300 pl-4 italic text-gray-600 my-4;
+}
+
+.html img {
+    @apply max-w-full h-auto rounded-md;
+}
