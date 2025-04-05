@@ -24,6 +24,7 @@ const DetailsView = ({ post }: DetailsViewProps) => {
               src={cover_image || "/placeholder.jpg"}
               alt={title}
               className="w-full h-[400px] object-cover bg-light rounded-2xl shadow"
+              loading="lazy"
             />
           </figure>
         )}
@@ -48,6 +49,7 @@ const DetailsView = ({ post }: DetailsViewProps) => {
             src={profile_image || "/user.png"}
             alt={name}
             className="w-10 h-10 rounded-full mr-3"
+            loading="lazy"
           />
           <p className="text-gray-700 text-sm">
             By{" "}

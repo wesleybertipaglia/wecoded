@@ -21,6 +21,7 @@ const Header = () => {
                 src="/abstract_2.webp"
                 alt="WECODED 2025"
                 className="h-8 w-auto aspect-square object-cover object-center rounded-full bg-gray-950"
+                loading="lazy"
               />
               <span>Stories</span>
             </Link>
@@ -32,6 +33,7 @@ const Header = () => {
                 src="/abstract_2.webp"
                 alt="WECODED 2025"
                 className="h-8 w-auto aspect-square object-cover object-center rounded-full invert border border-gray-500"
+                loading="lazy"
               />
               <span>Spotlight</span>
             </Link>

@@ -30,6 +30,7 @@ const ListView = ({ post }: ListViewProps) => {
           src={profile_image}
           alt={name}
           className="w-8 h-8 rounded-full mr-2"
+          loading="lazy"
         />
         <span className="text-sm text-gray-700">{name}</span>
       </div>
