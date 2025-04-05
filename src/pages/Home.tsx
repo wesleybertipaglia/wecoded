@@ -1,7 +1,7 @@
 import { Container, Hero, ListGrid, ListView } from "../components";
 import { Post } from "../types";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Hero />
@@ -18,4 +18,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

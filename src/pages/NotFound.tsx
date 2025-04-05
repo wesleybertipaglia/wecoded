@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Container } from "../components";
 
-const NotFound = () => {
+const NotFoundPage = () => {
   return (
     <Container classList={"py-5"}>
       <h1>404 - Page Not Found</h1>
@@ -16,4 +16,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default NotFoundPage;
