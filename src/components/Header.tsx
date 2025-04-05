@@ -8,17 +8,18 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-6">
             <Link to="/" className="hover:underline">
-              WECODED 2025
+              <img src="/logo.webp" alt="WECODED 2025" className="h-8" />
             </Link>
+          </div>
 
+          <nav className="flex items-center gap-6">
             <Link to="/stories" className="hover:underline">
               Stories
             </Link>
-
             <Link to="/spotlight" className="hover:underline">
               Spotlight
             </Link>
-          </div>
+          </nav>
         </div>
       </Container>
     </header>
