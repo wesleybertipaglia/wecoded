@@ -2,5 +2,6 @@ import HomePage from "./HomePage";
 import NotFoundPage from "./NotFoundPage";
 import ListPage from "./ListPage";
 import DetailsPage from "./DetailsPage";
+import SpotlightPage from "./SpotlightPage";
 
-export { HomePage, NotFoundPage, ListPage, DetailsPage };
+export { SpotlightPage, HomePage, NotFoundPage, ListPage, DetailsPage };

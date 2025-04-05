@@ -10,6 +10,14 @@ const Header = () => {
             <Link to="/" className="hover:underline">
               WECODED 2025
             </Link>
+
+            <Link to="/stories" className="hover:underline">
+              Stories
+            </Link>
+
+            <Link to="/spotlight" className="hover:underline">
+              Spotlight
+            </Link>
           </div>
         </div>
       </Container>

@@ -11,11 +11,13 @@ const DetailsView = ({ post }: DetailsViewProps) => {
     description,
     cover_image,
     user: { username, name, profile_image },
+    body_html,
+    tags,
   } = post;
 
   return (
     <Container classList="py-5 max-w-3xl mx-auto">
-      <div>
+      <div className="mb-8 border-b border-gray-200 pb-6">
         {cover_image && (
           <figure className="mb-6">
             <img
@@ -26,7 +28,20 @@ const DetailsView = ({ post }: DetailsViewProps) => {
           </figure>
         )}
 
-        <h1 className="text-3xl font-bold my-6">{title}</h1>
+        <h1 className="text-3xl font-bold mt-4 mb-2">{title}</h1>
+
+        <div className="flex flex-wrap gap-2 mb-6">
+          {tags && tags.length > 0
+            ? tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full"
+                >
+                  {tag}
+                </span>
+              ))
+            : ""}
+        </div>
 
         <div className="flex items-center mb-6">
           <img
@@ -50,10 +65,7 @@ const DetailsView = ({ post }: DetailsViewProps) => {
         <p className="text-gray-800 text-base leading-relaxed">{description}</p>
       </div>
 
-      <div>
-        <h2 className="text-2xl font-bold mt-8 mb-4">Content</h2>
-        <HtmlRenderer htmlContent={post.body_html} />
-      </div>
+      <HtmlRenderer htmlContent={body_html} />
     </Container>
   );
 };

@@ -35,3 +35,19 @@
 .html img {
     @apply max-w-full h-auto rounded-md;
 }
+
+.html pre {
+    @apply bg-gray-100 p-4 my-4 rounded-md overflow-x-auto;
+}
+
+.html code {
+    @apply font-mono text-sm;
+}
+
+.html .highlight__panel {
+    @apply hidden;
+}
+
+.html table {
+    @apply w-full border-collapse my-4;
+}
