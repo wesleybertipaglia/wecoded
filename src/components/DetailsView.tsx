@@ -1,5 +1,6 @@
 import { Container, HtmlRenderer } from ".";
 import { Post } from "../types";
+import Share from "./Share";
 
 interface DetailsViewProps {
   post: Post;
@@ -65,6 +66,8 @@ const DetailsView = ({ post }: DetailsViewProps) => {
         </div>
 
         <p className="text-gray-800 text-base leading-relaxed">{description}</p>
+
+        <Share title={title} description={description} />
       </div>
 
       <HtmlRenderer htmlContent={body_html} />
