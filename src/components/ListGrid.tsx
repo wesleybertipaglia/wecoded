@@ -16,7 +16,7 @@ function ListGrid<T>({
   apiUrl,
   renderItem,
 }: ListGridProps<T>): JSX.Element {
-  const { data = [], loading } = useFetch(apiUrl);
+  const { data = [], loading } = useFetch<T[]>(apiUrl);
 
   return (
     <Container classList="py-8">
