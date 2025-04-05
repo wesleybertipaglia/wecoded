@@ -1,4 +1,4 @@
-import { Container } from ".";
+import { Container, HtmlRenderer } from ".";
 import { Post } from "../types";
 
 interface DetailsViewProps {
@@ -50,10 +50,7 @@ const DetailsView = ({ post }: DetailsViewProps) => {
 
       <div>
         <h2 className="text-2xl font-bold mt-8 mb-4">Content</h2>
-        <div
-          className="prose"
-          dangerouslySetInnerHTML={{ __html: post.body_html }}
-        />
+        <HtmlRenderer htmlContent={post.body_html} />;
       </div>
     </Container>
   );

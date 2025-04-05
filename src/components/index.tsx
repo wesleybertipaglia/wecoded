@@ -6,6 +6,7 @@ import ListGrid from "./ListGrid";
 import ListAll from "./ListAll";
 import ListView from "./ListView";
 import DetailsView from "./DetailsView";
+import HtmlRenderer from "./HtmlRenderer";
 
 export {
   Container,
@@ -16,4 +17,5 @@ export {
   ListAll,
   ListView,
   DetailsView,
+  HtmlRenderer,
 };
