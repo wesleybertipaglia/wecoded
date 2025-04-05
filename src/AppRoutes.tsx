@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router";
-import { HomePage, NotFoundPage, ListPage } from "./pages";
+import { HomePage, NotFoundPage, ListPage, DetailsPage } from "./pages";
 
 const AppRoutes = () => {
   return (
@@ -7,6 +7,7 @@ const AppRoutes = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="*" element={<NotFoundPage />} />
       <Route path="/stories" element={<ListPage />} />
+      <Route path="/stories/:username/:slug" element={<DetailsPage />} />
     </Routes>
   );
 };

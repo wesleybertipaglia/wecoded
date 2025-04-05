@@ -10,12 +10,12 @@ const ListView = ({ post }: ListViewProps) => {
     slug,
     title,
     description,
-    user: { name, profile_image },
+    user: { username, name, profile_image },
   } = post;
 
   return (
     <Link
-      to={`/stories/${slug}`}
+      to={`/stories/${username}/${slug}`}
       className="block bg-white rounded-xl shadow hover:shadow-lg transition p-4"
     >
       <h3 className="text-lg font-semibold mb-1">{title}</h3>
