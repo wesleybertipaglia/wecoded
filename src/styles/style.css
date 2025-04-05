@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+body {
+    scrollbar-width: none !important;
+}
+
+* {
+    scrollbar-width: thin;
+}
+
 .html a {
     @apply text-blue-600 underline hover:text-blue-800;
 }

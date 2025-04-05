@@ -7,6 +7,7 @@ import ListAll from "./ListAll";
 import ListView from "./ListView";
 import DetailsView from "./DetailsView";
 import HtmlRenderer from "./HtmlRenderer";
+import TopButton from "./TopButton";
 
 export {
   Container,
@@ -18,4 +19,5 @@ export {
   ListView,
   DetailsView,
   HtmlRenderer,
+  TopButton,
 };
