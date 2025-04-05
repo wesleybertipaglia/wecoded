@@ -1,5 +1,5 @@
-import HomePage from "./Home";
-import NotFoundPage from "./NotFound";
+import HomePage from "./HomePage";
+import NotFoundPage from "./NotFoundPage";
 import ListPage from "./ListPage";
 
-export { HomePage as Home, NotFoundPage as NotFound, ListPage };
+export { HomePage, NotFoundPage, ListPage };
