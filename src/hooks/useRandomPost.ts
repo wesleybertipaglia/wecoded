@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import useFetch from "./useFetch";
 
-export const useRandomPost = () => {
+const useRandomPost = () => {
   const randomPage = Math.floor(Math.random() * 20) + 1;
   const apiUrl = `/articles?tag=wecoded&page=${randomPage}&per_page=10`;
 
@@ -17,3 +17,5 @@ export const useRandomPost = () => {
 
   return { path, loading };
 };
+
+export default useRandomPost;

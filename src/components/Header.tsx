@@ -20,7 +20,8 @@ const Header = () => {
               <img
                 src="/abstract_2.webp"
                 alt="WECODED 2025"
-                className="h-8 w-auto aspect-square object-cover object-center rounded-full bg-gray-950"
+                className="h-8 w-auto aspect-square object-cover object-center rounded-full"
+                style={{ backgroundColor: "#4933f1" }}
                 loading="lazy"
               />
               <span>Stories</span>

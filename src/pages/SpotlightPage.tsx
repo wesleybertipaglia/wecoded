@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Container } from "../components";
-import { useRandomPost } from "../hooks/useRandomPost";
+import { useRandomPost } from "../hooks";
 
 const SpotlightPage = () => {
   const { path, loading } = useRandomPost();
