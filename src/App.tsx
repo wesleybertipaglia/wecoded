@@ -1,8 +1,18 @@
 import AppRoutes from './AppRoutes'
+import { Header, Footer } from './components'
 
 function App() {
   return (
-    <AppRoutes />
+    <div className='d-flex flex-column justify-content-between'
+      style={{ minHeight: "100dvh" }}>
+      <Header />
+
+      <main style={{ flex: "1" }}>
+        <AppRoutes />
+      </main>
+
+      <Footer />
+    </div>
   )
 }
 
