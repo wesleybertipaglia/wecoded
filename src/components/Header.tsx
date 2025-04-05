@@ -1,18 +1,20 @@
-import Container from './Container'
-import { Link } from 'react-router-dom'
+import Container from "./Container";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-    return (
-        <header className="sticky-top bg-white">
-            <Container classList={"py-3 border-bottom"}>
-                <div className="d-flex justify-content-between align-items-center">
-                    <div className="d-flex align-items-center gap-4">
-                        <Link to="/" className="nav-item">WECODED 2025</Link>
-                    </div>
-                </div>
-            </Container>
-        </header>
-    )
-}
+  return (
+    <header className="sticky top-0 bg-white">
+      <Container classList={"py-4 border-b border-b-gray-300"}>
+        <div className="flex justify-between items-center">
+          <div className="flex items-center gap-6">
+            <Link to="/" className="hover:underline">
+              WECODED 2025
+            </Link>
+          </div>
+        </div>
+      </Container>
+    </header>
+  );
+};
 
-export default Header
+export default Header;

@@ -3,11 +3,10 @@ import { Header, Footer } from './components'
 
 function App() {
   return (
-    <div className='d-flex flex-column justify-content-between'
-      style={{ minHeight: "100dvh" }}>
+    <div className='flex flex-col min-h-screen'>
       <Header />
 
-      <main style={{ flex: "1" }}>
+      <main className='flex-grow'>
         <AppRoutes />
       </main>
 
