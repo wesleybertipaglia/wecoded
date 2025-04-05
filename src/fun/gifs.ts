@@ -9,7 +9,6 @@ const gifs = [
   "https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif",
   "https://media.giphy.com/media/fAnEC88LccN7a/giphy.gif",
   "https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif",
-  "https://media.giphy.com/media/xT1XGNBgWZ7Y5A1nDW/giphy.gif",
   "https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif",
 ];
 
