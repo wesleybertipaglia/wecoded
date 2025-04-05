@@ -6,7 +6,7 @@ const Hero = () => {
     <div
       className="relative"
       style={{
-        backgroundImage: "url('/background.webp')",
+        backgroundImage: "url('./background.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
