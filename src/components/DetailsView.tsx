@@ -2,6 +2,8 @@ import { ArrowCircleUpRight } from "@phosphor-icons/react";
 import { Container, HtmlRenderer } from ".";
 import { Post } from "../types";
 import Share from "./Share";
+import useConfetti from "../hooks/useConfetti";
+import { useEffect } from "react";
 
 interface DetailsViewProps {
   post: Post;
@@ -16,6 +18,12 @@ const DetailsView = ({ post }: DetailsViewProps) => {
     body_html,
     tags,
   } = post;
+
+  const triggerConfetti = useConfetti();
+
+  useEffect(() => {
+    triggerConfetti();
+  }, [triggerConfetti]);
 
   return (
     <Container classList="py-6 max-w-3xl mx-auto">
