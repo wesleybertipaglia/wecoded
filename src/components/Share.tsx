@@ -66,10 +66,10 @@ const Share: React.FC<ShareProps> = ({ title, description }) => {
   ];
 
   return (
-    <div className="my-6">
-      <p className="italic">Share it!</p>
+    <div className="flex items-center gap-2">
+      <p className="">Share this post: </p>
 
-      <div className="flex gap-3 mt-2">
+      <div className="flex gap-3">
         {socialLinks.map((social) => (
           <a
             key={social.name}
@@ -77,7 +77,7 @@ const Share: React.FC<ShareProps> = ({ title, description }) => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Share on ${social.name}`}
-            className="hover:opacity-75 text-light-text-3/75 dark:text-dark-text-3/75 hover:text-light-text-1 dark:hover:text-dark-text-1"
+            className="hover:opacity-75 transition-opacity duration-200 text-blue-600"
           >
             {social.icon}
           </a>

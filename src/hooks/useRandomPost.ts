@@ -12,7 +12,8 @@ const useRandomPost = () => {
 
     const randomIndex = Math.floor(Math.random() * data.length);
     const selected = data[randomIndex];
-    return `/stories/${selected.user.username}/${selected.slug}`;
+    console.log("Selected post:", selected);
+    return `/stories${selected.path}`;
   }, [data]);
 
   return { path, loading };
