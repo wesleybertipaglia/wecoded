@@ -6,7 +6,7 @@ import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename="/wecoded">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </StrictMode>
