@@ -25,7 +25,7 @@ This project highlights inspiring stories from underrepresented voices in tech, 
 
 ## 🚀 Demo
 
-Live demo coming soon!
+Live demo of the project can be found at [wecoded.vercel.app](https://wecoded.vercel.app/).
 
 ## 🛠 Get Started
 
